@@ -1,0 +1,62 @@
+{
+  "coffee": [
+    {
+      "name": "오늘의 커피",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "아메리카노 (Hot)",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "아메리카노 (Ice)",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "콜드브루",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "콜드브루 (Decaf)",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "카페라떼 (Hot)",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "카페라떼 (Ice)",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "카페라떼 (Decaf)",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "자몽 허니 블랙티 (Hot)",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "자몽 허니 블랙티 (Ice)",
+      "image": "https://picsum.photos/100/100"
+    }
+  ],
+  "food" : [
+    {
+      "name": "베이글",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "아이스 박스",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "티라미수",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "스트로베리 초코 생크림 케이크",
+      "image": "https://picsum.photos/100/100"
+    }
+  ]
+}

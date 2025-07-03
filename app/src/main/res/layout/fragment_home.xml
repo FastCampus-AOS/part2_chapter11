@@ -4,20 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout"
     tools:context=".HomeFragment">
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <include
                 android:id="@+id/recommendMenuList"
                 layout="@layout/layout_horizontal_menu_list" />
+
+            <include
+                android:id="@+id/bannerLayout"
+                layout="@layout/layout_banner_image" />
+
+            <include
+                android:id="@+id/foodMenuList"
+                layout="@layout/layout_horizontal_menu_list" />
+
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
@@ -29,6 +41,7 @@
         android:background="@color/transparent">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
@@ -65,13 +78,13 @@
                     android:id="@+id/appBarProgressBar"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="8dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="30dp"
                     android:layout_marginBottom="50dp"
                     android:max="12"
                     android:progress="5"
-                    android:progressTint="@color/teal_200"
+                    android:progressDrawable="@drawable/drawable_progress"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/starCountView"
                     app:layout_constraintStart_toStartOf="parent"
@@ -126,10 +139,24 @@
                         android:textSize="20dp" />
 
                 </LinearLayout>
+
             </androidx.appcompat.widget.Toolbar>
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="20dp"
+        android:backgroundTint="#2E6830"
+        android:text="@string/delivery"
+        android:textColor="@color/white"
+        app:icon="@drawable/baseline_delivery_dining_24"
+        app:iconTint="@color/white" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

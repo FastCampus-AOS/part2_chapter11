@@ -7,7 +7,7 @@ import java.io.IOException
 fun Context.readData(): Home? {
 
     return try {
-        val inputStream = this.resources.assets.open("Home.json")
+        val inputStream = this.resources.assets.open("home.json")
         val buffer = ByteArray(inputStream.available())
         inputStream.read(buffer)
         inputStream.close()

@@ -40,6 +40,7 @@
                     android:id="@+id/appBarImageView"
                     android:layout_width="0dp"
                     android:layout_height="170dp"
+                    android:alpha="0.5"
                     android:background="@color/teal_200"
                     android:scaleType="centerCrop"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -60,6 +61,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ProgressBar
+                    android:id="@+id/appBarProgressBar"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -68,6 +70,7 @@
                     android:layout_marginBottom="50dp"
                     android:max="12"
                     android:progress="5"
+                    android:progressTint="@color/teal_200"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/starCountView"
                     app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="50dp"
-                    android:text="5/12 ★"
+                    android:text="@string/app_bar_start_count"
                     android:textColor="@color/black"
                     android:textSize="28sp"
                     android:textStyle="bold"

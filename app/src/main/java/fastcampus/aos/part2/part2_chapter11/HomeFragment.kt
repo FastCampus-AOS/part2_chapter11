@@ -24,7 +24,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         initRecommandList(homeData, menuData)
         initBannerLayout(homeData)
         initFoodList(menuData)
+        initFloatingActionButton()
+    }
 
+    private fun initFloatingActionButton() {
         binding.scrollView.setOnScrollChangeListener { v, _, scrollY, _, _ ->
             if (scrollY == 0) {
                 binding.floatingActionButton.extend()
@@ -32,9 +35,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 binding.floatingActionButton.shrink()
             }
         }
-
-
-
     }
 
     private fun initFoodList(menuData: Menu) {
